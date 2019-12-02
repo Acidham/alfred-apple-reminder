@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfred.workflow.applereminder</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>06552A05-662F-4583-9B6E-DD231E04E12F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>31878819-DFAC-45A3-B7E0-29BA7F92BB23</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C5E63972-1932-4A0E-B89B-B0BAAB187693</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>31878819-DFAC-45A3-B7E0-29BA7F92BB23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>76EBF471-2E5E-43CF-8246-41F94765FDA3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>68BA0385-C769-44DF-B021-4F5FB04FCCA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>76EBF471-2E5E-43CF-8246-41F94765FDA3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>06552A05-662F-4583-9B6E-DD231E04E12F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C5E63972-1932-4A0E-B89B-B0BAAB187693</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCDE85AC-EEE2-4B2F-B585-FD5F29FE003D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CCDE85AC-EEE2-4B2F-B585-FD5F29FE003D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDB35402-AEC0-4261-918B-B848F0010E5C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E4AB5874-47B2-4D4B-AEA8-AA6842372379</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68BA0385-C769-44DF-B021-4F5FB04FCCA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EDB35402-AEC0-4261-918B-B848F0010E5C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4AB5874-47B2-4D4B-AEA8-AA6842372379</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Acidham</string>
+	<key>description</key>
+	<string>Add reminders to Reminders Inbox</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Apple Reminders</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>*rmdate</string>
+				<key>subtext</key>
+				<string>Title: {var:title}, Date: {query}</string>
+				<key>text</key>
+				<string>Add a date for the Reminder</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>*list</string>
+				<key>subtext</key>
+				<string>Title: {var:title}, Date: {var:date}, Time: {var:timey}, List: {query}</string>
+				<key>text</key>
+				<string>Add a list for the Reminder or leave empty for default</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E4AB5874-47B2-4D4B-AEA8-AA6842372379</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>*rmtime</string>
+				<key>subtext</key>
+				<string>Title: {var:title}, Date: {var:date}, Time: {query}</string>
+				<key>text</key>
+				<string>Add a time for the Reminder</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CCDE85AC-EEE2-4B2F-B585-FD5F29FE003D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>title</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>06552A05-662F-4583-9B6E-DD231E04E12F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>date</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C5E63972-1932-4A0E-B89B-B0BAAB187693</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>time</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>EDB35402-AEC0-4261-918B-B848F0010E5C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>list</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>68BA0385-C769-44DF-B021-4F5FB04FCCA4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rm</string>
+				<key>subtext</key>
+				<string>Title: {query}</string>
+				<key>text</key>
+				<string>Add Reminder Title</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>76EBF471-2E5E-43CF-8246-41F94765FDA3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>New Reminder created</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>(* For using in Script Editor *)--alfred_script("xxx;;14;Wishlist")on alfred_script(q)	set noDate to "no"	set theDayArray to {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}		(* Explode query input *)	set myList to explode(";", q)		(* get the Title of the Reminder *)	set theReminder to item 1 of myList		(* try to get Date, tomorrow or next week on error set to "none" *)	set queryDay to item 2 of myList	if queryDay is "" then set queryDay to "none"		(* Replace . with : &lt;OLD:Set default Reminder Time 8:00&gt; *)	set queryTime to item 3 of myList	--	if queryTime is "" then set queryTime to "8:00"	set queryTime to replace_chars(queryTime, ".", ":")		(* Get List of for Reminder *)	set queryList to trim(item 4 of myList)		(* try to get entered time. if only hours are provided at the missing ":00" *)	if queryTime is not "" and queryTime does not contain ":" then		set queryTime to queryTime &amp; ":00"	end if					(* calculate due date when "today" was entered. If time string is emptpy, add 3 hours from now *)	if queryDay contains "today" then		if queryTime is not equal to "" then			set theDate to date string of (current date)			set DueDate to date (theDate &amp; " " &amp; queryTime)		else			set DueDate to ((current date) + (3 * hours))		end if				(* calculate tomorrow's due date. If time string is empty get current time *)	else if queryDay contains "tomorrow" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * days))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* Calculate next weeks due date. If time string is empty get current time *)	else if queryDay contains "next week" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * weeks))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* if weekday was provided set due date to the next weekday*)	else if theDayArray contains queryDay then				set theNext to list_position(queryDay, theDayArray)		set theNextWeekday to date string of (nextWeekday(theNext))		set DueDate to date (theNextWeekday &amp; " " &amp; queryTime)				(* if no day was provided set noDate flag to "yes" *)	else if queryDay contains "none" then		set noDate to "yes"				(* In case date where provided check if only DD and MM was provided and add current year *)	else if queryDay contains "." then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set expDate to explode(".", queryDay)		if (count of expDate) is equal to 2 then			set theYear to year of (current date)			set queryDay to queryDay &amp; "." &amp; theYear		end if		set DueDate to date (queryDay &amp; " " &amp; queryTime)			end if		(* Create reminder without a DueDate *)	if noDate is equal to "yes" then		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists			if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder}			end tell		end tell		set output to theReminder &amp; ", in List: " &amp; listName				(* Create reminder with DueDate *)	else		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists						if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder, remind me date:DueDate}			end tell					end tell		set output to theReminder &amp; "Due: " &amp; DueDate &amp; ", in List: " &amp; listName	end if	end alfred_script(* explode string with given delimter *)on explode(delimiter, input) -- explode(delimiter (String),input (String)) (Array)	local delimiter, input, ASTID	set ASTID to AppleScript's text item delimiters	try		-- save delimiters to restore old settings		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to delimiter		set input to text items of input		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		return input --&gt; list	on error eMsg number eNum		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		error "Can't explode: " &amp; eMsg number eNum	end tryend explode(* calculates next weekday as an integer *)on nextWeekday(wd)	set today to current date	set twd to weekday of today	if twd is wd then		set d to 7	else		set d to (7 + wd - twd) mod 7	end if	return today + (d * days)end nextWeekday(* returns position in a list *)on list_position(this_item, this_list)	repeat with i from 1 to the count of this_list		if item i of this_list is this_item then return i	end repeat	return 0end list_position(*Replaces a character witin a text*)on replace_chars(this_text, search_string, replacement_string) -- (string,char,char)	set AppleScript's text item delimiters to the search_string	set the item_list to every text item of this_text	set AppleScript's text item delimiters to the replacement_string	set this_text to the item_list as string	set AppleScript's text item delimiters to ""	return this_textend replace_chars(* =======================================================
+FUNTION: Trim trailing whitespaces from a string
+RETURNS: String
+======================================================== *)on trim(str)	set cmd to "echo \"" &amp; str &amp; "\" |  sed 's/ //g'"	set trimmed to do shell script cmd	return trimmedend trim</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>31878819-DFAC-45A3-B7E0-29BA7F92BB23</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:title};{var:date};{var:time};{var:list}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Following options:
+- due day and time are empty: due day will be set to today with 3 hours from now
+- time is empty: Reminder will be set to date provided at given time
+- if list is empty it uses default list
+- accepted date format: &lt;day&gt;.&lt;months&gt; or &lt;day&gt;.&lt;months&gt;.&lt;year&gt; or tomorrow, next week or &lt;weekday&gt;
+- weekday: Reminder will be set to the next weekday
+- accepted time format: &lt;hours&gt; or &lt;hours&gt;:&lt;minutes&gt;</string>
+	<key>uidata</key>
+	<dict>
+		<key>06552A05-662F-4583-9B6E-DD231E04E12F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+		<key>31878819-DFAC-45A3-B7E0-29BA7F92BB23</key>
+		<dict>
+			<key>xpos</key>
+			<integer>425</integer>
+			<key>ypos</key>
+			<integer>215</integer>
+		</dict>
+		<key>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</key>
+		<dict>
+			<key>xpos</key>
+			<integer>425</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>245</integer>
+		</dict>
+		<key>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+		<key>68BA0385-C769-44DF-B021-4F5FB04FCCA4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>955</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+		<key>76EBF471-2E5E-43CF-8246-41F94765FDA3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>205</integer>
+		</dict>
+		<key>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>215</integer>
+		</dict>
+		<key>C5E63972-1932-4A0E-B89B-B0BAAB187693</key>
+		<dict>
+			<key>xpos</key>
+			<integer>560</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+		<key>CCDE85AC-EEE2-4B2F-B585-FD5F29FE003D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>615</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>E4AB5874-47B2-4D4B-AEA8-AA6842372379</key>
+		<dict>
+			<key>xpos</key>
+			<integer>810</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>EDB35402-AEC0-4261-918B-B848F0010E5C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>755</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2.1.1</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
