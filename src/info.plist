@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>31878819-DFAC-45A3-B7E0-29BA7F92BB23</key>
+		<key>1B0AB72E-986F-4631-B4A1-C7C5C6C0141F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</string>
+				<string>06552A05-662F-4583-9B6E-DD231E04E12F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,6 +34,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>31878819-DFAC-45A3-B7E0-29BA7F92BB23</key>
+		<array/>
 		<key>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</key>
 		<array>
 			<dict>
@@ -47,11 +49,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>34408B21-CB1D-4D78-A6EF-02D8B65CE1E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>31878819-DFAC-45A3-B7E0-29BA7F92BB23</string>
+				<string>34408B21-CB1D-4D78-A6EF-02D8B65CE1E0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +105,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>06552A05-662F-4583-9B6E-DD231E04E12F</string>
+				<string>DCCD0ED8-283C-4718-9E2B-0AAE9DEC1DAF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -117,6 +132,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>EDB35402-AEC0-4261-918B-B848F0010E5C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DCCD0ED8-283C-4718-9E2B-0AAE9DEC1DAF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B0AB72E-986F-4631-B4A1-C7C5C6C0141F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -228,12 +256,100 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import re
+import sys
+
+inpt = sys.argv[1]
+
+url_list = re.findall(r'(https?://\S+)', inpt)
+if len(url_list):
+    url = url_list[0]
+    txt = inpt.replace(url, '')
+    sys.stdout.write("{0}|{1}".format(txt.rstrip(), url.rstrip()))
+else:
+    sys.stdout.write("{}|".format(inpt))</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DCCD0ED8-283C-4718-9E2B-0AAE9DEC1DAF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rm</string>
+				<key>subtext</key>
+				<string>Title: {query}</string>
+				<key>text</key>
+				<string>Add Reminder Title</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>76EBF471-2E5E-43CF-8246-41F94765FDA3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>variables</key>
 				<dict>
 					<key>title</key>
-					<string>{query}</string>
+					<string>{var:item1}</string>
+					<key>url</key>
+					<string>{var:item2}</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -300,54 +416,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>rm</string>
-				<key>subtext</key>
-				<string>Title: {query}</string>
-				<key>text</key>
-				<string>Add Reminder Title</string>
-				<key>withspace</key>
+				<key>delimiter</key>
+				<string>|</string>
+				<key>trimarguments</key>
 				<true/>
+				<key>variableprefix</key>
+				<string>item</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
-			<string>76EBF471-2E5E-43CF-8246-41F94765FDA3</string>
+			<string>1B0AB72E-986F-4631-B4A1-C7C5C6C0141F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>1310720</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -374,7 +455,41 @@
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>(* For using in Script Editor *)--alfred_script("xxx;;14;Wishlist")on alfred_script(q)	set noDate to "no"	set theDayArray to {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}		(* Explode query input *)	set myList to explode(";", q)		(* get the Title of the Reminder *)	set theReminder to item 1 of myList		(* try to get Date, tomorrow or next week on error set to "none" *)	set queryDay to item 2 of myList	if queryDay is "" then set queryDay to "none"		(* Replace . with : &lt;OLD:Set default Reminder Time 8:00&gt; *)	set queryTime to item 3 of myList	--	if queryTime is "" then set queryTime to "8:00"	set queryTime to replace_chars(queryTime, ".", ":")		(* Get List of for Reminder *)	set queryList to trim(item 4 of myList)		(* try to get entered time. if only hours are provided at the missing ":00" *)	if queryTime is not "" and queryTime does not contain ":" then		set queryTime to queryTime &amp; ":00"	end if					(* calculate due date when "today" was entered. If time string is emptpy, add 3 hours from now *)	if queryDay contains "today" then		if queryTime is not equal to "" then			set theDate to date string of (current date)			set DueDate to date (theDate &amp; " " &amp; queryTime)		else			set DueDate to ((current date) + (3 * hours))		end if				(* calculate tomorrow's due date. If time string is empty get current time *)	else if queryDay contains "tomorrow" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * days))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* Calculate next weeks due date. If time string is empty get current time *)	else if queryDay contains "next week" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * weeks))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* if weekday was provided set due date to the next weekday*)	else if theDayArray contains queryDay then				set theNext to list_position(queryDay, theDayArray)		set theNextWeekday to date string of (nextWeekday(theNext))		set DueDate to date (theNextWeekday &amp; " " &amp; queryTime)				(* if no day was provided set noDate flag to "yes" *)	else if queryDay contains "none" then		set noDate to "yes"				(* In case date where provided check if only DD and MM was provided and add current year *)	else if queryDay contains "." then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set expDate to explode(".", queryDay)		if (count of expDate) is equal to 2 then			set theYear to year of (current date)			set queryDay to queryDay &amp; "." &amp; theYear		end if		set DueDate to date (queryDay &amp; " " &amp; queryTime)			end if		(* Create reminder without a DueDate *)	if noDate is equal to "yes" then		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists			if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder}			end tell		end tell		set output to theReminder &amp; ", in List: " &amp; listName				(* Create reminder with DueDate *)	else		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists						if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder, remind me date:DueDate}			end tell					end tell		set output to theReminder &amp; "Due: " &amp; DueDate &amp; ", in List: " &amp; listName	end if	end alfred_script(* explode string with given delimter *)on explode(delimiter, input) -- explode(delimiter (String),input (String)) (Array)	local delimiter, input, ASTID	set ASTID to AppleScript's text item delimiters	try		-- save delimiters to restore old settings		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to delimiter		set input to text items of input		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		return input --&gt; list	on error eMsg number eNum		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		error "Can't explode: " &amp; eMsg number eNum	end tryend explode(* calculates next weekday as an integer *)on nextWeekday(wd)	set today to current date	set twd to weekday of today	if twd is wd then		set d to 7	else		set d to (7 + wd - twd) mod 7	end if	return today + (d * days)end nextWeekday(* returns position in a list *)on list_position(this_item, this_list)	repeat with i from 1 to the count of this_list		if item i of this_list is this_item then return i	end repeat	return 0end list_position(*Replaces a character witin a text*)on replace_chars(this_text, search_string, replacement_string) -- (string,char,char)	set AppleScript's text item delimiters to the search_string	set the item_list to every text item of this_text	set AppleScript's text item delimiters to the replacement_string	set this_text to the item_list as string	set AppleScript's text item delimiters to ""	return this_textend replace_chars(* =======================================================
+				<string>(* For using in Script Editor *)--alfred_script("xxx;;14;Wishlist")on alfred_script(q)	set noDate to "no"	set theDayArray to {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}		(* Explode query input *)	set myList to explode(";", q)		(* get the Title of the Reminder *)	set theReminder to item 1 of myList		(* try to get Date, tomorrow or next week on error set to "none" *)	set queryDay to item 2 of myList	if queryDay is "" then set queryDay to "none"		(* Replace . with : &lt;OLD:Set default Reminder Time 8:00&gt; *)	set queryTime to item 3 of myList	--	if queryTime is "" then set queryTime to "8:00"	set queryTime to replace_chars(queryTime, ".", ":")		(* Get List of for Reminder *)	set queryList to trim(item 4 of myList)		(* Get URL for body*)	set theURL to item 5 of myList		(* try to get entered time. if only hours are provided at the missing ":00" *)	if queryTime is not "" and queryTime does not contain ":" then		set queryTime to queryTime &amp; ":00"	end if					(* calculate due date when "today" was entered. If time string is emptpy, add 3 hours from now *)	if queryDay contains "today" then		if queryTime is not equal to "" then			set theDate to date string of (current date)			set DueDate to date (theDate &amp; " " &amp; queryTime)		else			set DueDate to ((current date) + (3 * hours))		end if				(* calculate tomorrow's due date. If time string is empty get current time *)	else if queryDay contains "tomorrow" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * days))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* Calculate next weeks due date. If time string is empty get current time *)	else if queryDay contains "next week" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * weeks))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* if weekday was provided set due date to the next weekday*)	else if theDayArray contains queryDay then				set theNext to list_position(queryDay, theDayArray)		set theNextWeekday to date string of (nextWeekday(theNext))		set DueDate to date (theNextWeekday &amp; " " &amp; queryTime)				(* if no day was provided set noDate flag to "yes" *)	else if queryDay contains "none" then		set noDate to "yes"				(* In case date where provided check if only DD and MM was provided and add current year *)	else if queryDay contains "." then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set expDate to explode(".", queryDay)		if (count of expDate) is equal to 2 then			set theYear to year of (current date)			set queryDay to queryDay &amp; "." &amp; theYear		end if		set DueDate to date (queryDay &amp; " " &amp; queryTime)			end if		(* Create reminder without a DueDate *)	if noDate is equal to "yes" then		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists			if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder}			end tell		end tell		set output to theReminder &amp; ", in List: " &amp; listName				(* Create reminder with DueDate *)	else		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists						if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder, body:theURL, remind me date:DueDate}			end tell					end tell		set output to theReminder &amp; "Due: " &amp; DueDate &amp; ", in List: " &amp; listName	end if	end alfred_script(* explode string with given delimter *)on explode(delimiter, input) -- explode(delimiter (String),input (String)) (Array)	local delimiter, input, ASTID	set ASTID to AppleScript's text item delimiters	try		-- save delimiters to restore old settings		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to delimiter		set input to text items of input		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		return input --&gt; list	on error eMsg number eNum		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		error "Can't explode: " &amp; eMsg number eNum	end tryend explode(* calculates next weekday as an integer *)on nextWeekday(wd)	set today to current date	set twd to weekday of today	if twd is wd then		set d to 7	else		set d to (7 + wd - twd) mod 7	end if	return today + (d * days)end nextWeekday(* returns position in a list *)on list_position(this_item, this_list)	repeat with i from 1 to the count of this_list		if item i of this_list is this_item then return i	end repeat	return 0end list_position(*Replaces a character witin a text*)on replace_chars(this_text, search_string, replacement_string) -- (string,char,char)	set AppleScript's text item delimiters to the search_string	set the item_list to every text item of this_text	set AppleScript's text item delimiters to the replacement_string	set this_text to the item_list as string	set AppleScript's text item delimiters to ""	return this_textend replace_chars(* =======================================================
+FUNTION: Trim trailing whitespaces from a string
+RETURNS: String
+======================================================== *)on trim(str)	set cmd to "echo \"" &amp; str &amp; "\" |  sed 's/ //g'"	set trimmed to do shell script cmd	return trimmedend trim</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>34408B21-CB1D-4D78-A6EF-02D8B65CE1E0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:title};{var:date};{var:time};{var:list};{var:url}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>(* For using in Script Editor *)--alfred_script("xxx;;14;Wishlist")on alfred_script(q)	set noDate to "no"	set theDayArray to {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}		(* Explode query input *)	set myList to explode(";", q)		(* get the Title of the Reminder *)	set theReminder to item 1 of myList		(* try to get Date, tomorrow or next week on error set to "none" *)	set queryDay to item 2 of myList	if queryDay is "" then set queryDay to "none"		(* Replace . with : &lt;OLD:Set default Reminder Time 8:00&gt; *)	set queryTime to item 3 of myList	--	if queryTime is "" then set queryTime to "8:00"	set queryTime to replace_chars(queryTime, ".", ":")		(* Get List of for Reminder *)	set queryList to trim(item 4 of myList)		(* try to get entered time. if only hours are provided at the missing ":00" *)	if queryTime is not "" and queryTime does not contain ":" then		set Pos to offset of " " in queryTime		set theHour to characters 1 thru (Pos - 1) of queryTime as string		set queryTime to theHour &amp; ":00" &amp; characters (Pos) through end of queryTime as string	else if (queryTime does not contain "am") and (queryTime does not contain "pm") then		set Pos to offset of ":" in queryTime		set theHour to characters 1 thru (Pos - 1) of queryTime as string		set theHour to returnNumbersInString(theHour)		set theHour to theHour as number		set queryTime to characters (Pos + 1) through end of queryTime as string				-- Get the "minute"		set Pos to offset of ":" in queryTime		set theMin to characters 1 thru (Pos - 1) of queryTime as string		set queryTime to characters (Pos + 1) through end of queryTime as string				--Get "AM or PM"		set Pos to offset of " " in queryTime		set theSfx to characters (Pos + 1) through end of queryTime as string		if theSfx does not contain "pm" and theSfx does not contain "am" then			if (theHour is less than 24) or (theHour is greater than or equal to 0) then				if theHour is less than 12 then					set theSfx to "am"				else					set theSfx to "pm"					set theHour to theHour - 12				end if			end if		end if		set queryTime to theHour &amp; ":" &amp; theMin &amp; " " &amp; theSfx as string	end if					(* calculate due date when "today" was entered. If time string is emptpy, add 3 hours from now *)	if queryDay contains "today" then		if queryTime is not equal to "" then			set theDate to date string of (current date)			set DueDate to date (theDate &amp; " " &amp; queryTime)		else			set DueDate to ((current date) + (3 * hours))		end if				(* calculate tomorrow's due date. If time string is empty get current time *)	else if queryDay contains "tomorrow" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * days))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* Calculate next weeks due date. If time string is empty get current time *)	else if queryDay contains "next week" then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set theDate to date string of ((current date) + (1 * weeks))		set DueDate to date (theDate &amp; " " &amp; queryTime)				(* if weekday was provided set due date to the next weekday*)	else if theDayArray contains queryDay then				set theNext to list_position(queryDay, theDayArray)		set theNextWeekday to date string of (nextWeekday(theNext))		set DueDate to date (theNextWeekday &amp; " " &amp; queryTime)				(* if no day was provided set noDate flag to "yes" *)	else if queryDay contains "none" then		set noDate to "yes"				(* In case date where provided check if only DD and MM was provided and add current year *)	else if queryDay contains "." then		if queryTime is equal to "" then			set queryTime to time string of (current date)		end if		set expDate to explode(".", queryDay)		if (count of expDate) is equal to 2 then			set theYear to year of (current date)			set queryDay to queryDay &amp; "." &amp; theYear		end if		set DueDate to date (queryDay &amp; " " &amp; queryTime)			end if		(* Create reminder without a DueDate *)	if noDate is equal to "yes" then		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists			if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder}			end tell		end tell		set output to theReminder &amp; ", in List: " &amp; listName				(* Create reminder with DueDate *)	else		tell application "Reminders"			-- get default list set in Reminders			if queryList is equal to "" then				set listName to name of default list			else				set listName to queryList			end if						set availList to name of lists						if availList does not contain listName then				set listName to name of default list			end if						tell list listName				make new reminder with properties {name:theReminder, remind me date:DueDate}			end tell					end tell		set output to theReminder &amp; "
+Due: " &amp; DueDate &amp; ", in List: " &amp; listName	end if	end alfred_script(* explode string with given delimter *)on explode(delimiter, input) -- explode(delimiter (String),input (String)) (Array)	local delimiter, input, ASTID	set ASTID to AppleScript's text item delimiters	try		-- save delimiters to restore old settings		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to delimiter		set input to text items of input		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		return input --&gt; list	on error eMsg number eNum		set oldDelimiters to AppleScript's text item delimiters		set AppleScript's text item delimiters to ASTID		set AppleScript's text item delimiters to oldDelimiters		error "Can't explode: " &amp; eMsg number eNum	end tryend explode(* calculates next weekday as an integer *)on nextWeekday(wd)	set today to current date	set twd to weekday of today	if twd is wd then		set d to 7	else		set d to (7 + wd - twd) mod 7	end if	return today + (d * days)end nextWeekday(* returns position in a list *)on list_position(this_item, this_list)	repeat with i from 1 to the count of this_list		if item i of this_list is this_item then return i	end repeat	return 0end list_position(*Replaces a character witin a text*)on replace_chars(this_text, search_string, replacement_string) -- (string,char,char)	set AppleScript's text item delimiters to the search_string	set the item_list to every text item of this_text	set AppleScript's text item delimiters to the replacement_string	set this_text to the item_list as string	set AppleScript's text item delimiters to ""	return this_textend replace_charson returnNumbersInString(inputString)	set s to quoted form of inputString	do shell script "sed s/[a-zA-Z\\']//g &lt;&lt;&lt; " &amp; s	set dx to the result	set numlist to {}	repeat with i from 1 to count of words in dx		set this_item to word i of dx		try			set this_item to this_item as number			set the end of numlist to this_item		end try	end repeat	return numlistend returnNumbersInString(* =======================================================
 FUNTION: Trim trailing whitespaces from a string
 RETURNS: String
 ======================================================== *)on trim(str)	set cmd to "echo \"" &amp; str &amp; "\" |  sed 's/ //g'"	set trimmed to do shell script cmd	return trimmedend trim</string>
@@ -388,24 +503,10 @@ RETURNS: String
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:title};{var:date};{var:time};{var:list}</string>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Following options:
+- rm accept title or title and URL
 - due day and time are empty: due day will be set to today with 3 hours from now
 - time is empty: Reminder will be set to date provided at given time
 - if list is empty it uses default list
@@ -417,92 +518,123 @@ RETURNS: String
 		<key>06552A05-662F-4583-9B6E-DD231E04E12F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>525</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>60</integer>
+		</dict>
+		<key>1B0AB72E-986F-4631-B4A1-C7C5C6C0141F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>60</integer>
 		</dict>
 		<key>31878819-DFAC-45A3-B7E0-29BA7F92BB23</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>new with pm and 24h differntation</string>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>55</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>335</integer>
 		</dict>
 		<key>32D3A3CF-5AFA-4DCA-BF44-0FB36D9ADD15</key>
 		<dict>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>590</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>30</integer>
+		</dict>
+		<key>34408B21-CB1D-4D78-A6EF-02D8B65CE1E0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Backup w/o PM and 24 h differentation</string>
+			<key>xpos</key>
+			<integer>785</integer>
+			<key>ypos</key>
+			<integer>200</integer>
 		</dict>
 		<key>407007DD-157F-4EA6-85C8-8B7AF42F2A2C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>365</integer>
+			<integer>700</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>230</integer>
 		</dict>
 		<key>4AB852F0-17AE-4BBC-B31E-CCFA6552EFA0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>20</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>30</integer>
 		</dict>
 		<key>68BA0385-C769-44DF-B021-4F5FB04FCCA4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>1120</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>60</integer>
 		</dict>
 		<key>76EBF471-2E5E-43CF-8246-41F94765FDA3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>155</integer>
+			<integer>165</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>30</integer>
 		</dict>
 		<key>AE70C44B-D0B6-43DC-AF9E-9C11B35D0B7E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>975</integer>
 			<key>ypos</key>
-			<integer>215</integer>
+			<integer>200</integer>
 		</dict>
 		<key>C5E63972-1932-4A0E-B89B-B0BAAB187693</key>
 		<dict>
 			<key>xpos</key>
-			<integer>560</integer>
+			<integer>725</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>60</integer>
 		</dict>
 		<key>CCDE85AC-EEE2-4B2F-B585-FD5F29FE003D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>780</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>30</integer>
+		</dict>
+		<key>DCCD0ED8-283C-4718-9E2B-0AAE9DEC1DAF</key>
+		<dict>
+			<key>note</key>
+			<string>title and URL dispatcher</string>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>30</integer>
 		</dict>
 		<key>E4AB5874-47B2-4D4B-AEA8-AA6842372379</key>
 		<dict>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>975</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>30</integer>
 		</dict>
 		<key>EDB35402-AEC0-4261-918B-B848F0010E5C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>755</integer>
+			<integer>920</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>60</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1.1</string>
+	<string>2.2.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

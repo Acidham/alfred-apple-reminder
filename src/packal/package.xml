@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Apple Reminders</name>
-  <version>2.1</version>
-  <bundle>com.alfred2.workflow.applereminder</bundle>
-  <updated>1468427595</updated>
-  <file>apple_reminders.alfredworkflow</file>
-</workflow>
